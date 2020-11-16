@@ -13,6 +13,30 @@ body{
   font-family: "微軟正黑體",sans-serif;
 }
 
+.nbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nbar li {
+  float: top;
+}
+
+.nbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
 /* 複寫區 */
 ul{
   padding: 0;
@@ -46,9 +70,10 @@ img {
 
 .resume{
   display: flex;
-  max-width: 950px;
+  background-color: white;
+  max-width: 1000px;
   border: solid 10px black;
-  padding: 50px;
+  padding: 30px;
   position: relative;
 }
 .left{
@@ -83,12 +108,12 @@ img {
 }
 .photo{
   position: absolute;
-  left: 270;
+  left: 250;
   top: 20px;
 }
 
 .listExperience>li{
-  display: flex;
+  display: inline;
   margin-bottom: 10px;
   
 }
@@ -106,8 +131,8 @@ img {
   border-color: #FFDE9E
 }
 .listExperience li ul{
-  padding-left: 10px;
-  margin-left: 10px;
+  padding-left: 0px;
+  margin-left: 5px;
   border-left: solid 15px white
 }
 
@@ -239,4 +264,17 @@ img {
   border: solid 2px #FF7168;
   border-radius: 5px
 }
+.lista li{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
 
+.lista hr{
+  border: none;
+  border-bottom: solid 4px #FF7168;
+  width: 100%;
+  margin-left: 0;
+}
